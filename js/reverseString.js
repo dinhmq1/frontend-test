@@ -5,6 +5,6 @@ function reverseString(str) {
     }
     return newString;
 }
-var reverse = reverseString('Mike');
+var reverse = reverseString('Oanh');
 
 console.log(reverse);
