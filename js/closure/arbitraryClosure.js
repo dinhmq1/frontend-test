@@ -27,3 +27,10 @@ function multiplier(factor) {
 
 var twice = multiplier(2);
 console.log(twice(5));
+
+// In the example, multiplier returns a frozen chunk of code that gets stored
+// in the twice variable. The last line then calls the value in this variable,
+// causing the frozen code (return number * factor;) to be activated. It still 
+// has access to the factor variable from the multiplier call that created it, 
+// and in addition it gets access to the argument passed when unfreezing it, 5,
+// through its number parameter.
